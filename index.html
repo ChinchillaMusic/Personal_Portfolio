@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="eng">
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JLChinchilla</title>
+    <link rel="icon" type="image-png" href="images/logoCoding-32x32.png">
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6a9532a66c.js" crossorigin="anonymous"></script>
+    <!-- Xtra Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark position-sticky">
+      <div class="container-fluid">
+        <a class="navbar-brand interact-link" href="#"><img src="images/brand.png" alt="ChinchillaCoding" width="50" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a id="portfolio-button" class="nav-link active interact-link" aria-current="page" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a id="about-button" class="nav-link interact-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a id="contact-button" class="nav-link interact-link" href="#contact">Contact</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle interact-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+                <ul class="dropdown-menu dropdown-menu-dark bg-opacity">
+                  <li><a class="dropdown-item" href="https://appleclone-jlchinchilla.netlify.app/" target="_blank">Apple</a></li>
+                  <li><a class="dropdown-item" href="https://newsweek-jlchinchilla.netlify.app/" target="_blank">Newsweek</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="https://airbnb-clone-jlchinchilla.netlify.app/" target="_blank">Airbnb Home</a></li>
+                  <li><a class="dropdown-item" href="https://airbnb-news-jlchinchilla.netlify.app/" target="_blank">Airbnb News</a></li>
+                </ul>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="nav-item mt-2">
+                <span>Social</span>
+                <a class="mx-2 logo-link" href="https://github.com/ChinchillaMusic" target="_blank"><i class="fa-brands fa-github" style="color: #fff;"></i></a>
+                <span>|</span>
+                <a class="mx-2 logo-link" href="https://www.linkedin.com/in/joseluischinchillachacon/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #fff;"></i></a>
+                <span>|</span>
+                <a class="mx-2 logo-link" href="mailto:chinchillacoding@gmail.com" target="_blank"><i class="fa-solid fa-at" style="color: #fff;"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Content -->
+    <div class="container-fluid text-center home-page">
+      <div class="row align-items-center py-5">
+        <div class="col-none col-md-5 align-self-start shorter-disappear">
+          <img class="animate__animated animate__backInLeft img-fluid portrait" src="images/profile-img.png" alt="portrait">
+        </div>
+        <div class="col-12 col-md-7">
+          <div class="animate__animated animate__backInRight bg-dark bg-gradient bg-opacity-30 text-light rounded-end-5 px-3 pt-4 pb-2 me-3 m-md-3">
+            <h1 class="display-4">Jose Luis Chinchilla</h1>
+            <hr>
+            <h2><strong>Full Stack</strong><small> Developer</small></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio" class="container-fluid portfolio-section py-4 px-5 text-white">
+      <h2 class="display-2 text-center fw-bold mt-5">Portfolio</h2>
+      <div class="row align-items-center text-white">
+        <div class="col-12 col-md-6 px-3 py-4 text-center">
+          <div id="web-1" class="pb-2 web-screenshot">
+            <a class="img-link p-2 text-black" href="https://appleclone-jlchinchilla.netlify.app/" target="_blank">Visit Website</a>
+          </div>
+          <a class="d-block text-white display-5 py-2 my-3" href="https://appleclone-jlchinchilla.netlify.app/" target="_blank">Apple clone</a>
+          <div class="d-inline bg-light bg-opacity-40 pt-3 pb-2 px-2 rounded-2 border">
+            <i class="fa-brands fa-html5 fa-xl mx-1" style="color: #ff8040;"></i>
+            <i class="fa-brands fa-css3-alt fa-xl mx-1" style="color: #0080ff;"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 px-3 py-4 text-center">
+          <div id="web-2" class="pb-2 web-screenshot">
+            <a class="img-link p-2 text-danger" href="https://newsweek-jlchinchilla.netlify.app/" target="_blank">Visit Website</a>
+          </div>
+          <a class="d-block text-white display-5 py-2 my-3" href="https://newsweek-jlchinchilla.netlify.app/" target="_blank">Newsweek clone</a>
+          <div class="d-inline bg-light bg-opacity-40 pt-3 pb-2 px-2 rounded-2 border">
+            <i class="fa-brands fa-html5 fa-xl mx-1" style="color: #ff8040;"></i>
+            <i class="fa-brands fa-css3-alt fa-xl mx-1" style="color: #0080ff;"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 px-3 py-4 text-center">
+          <div id="web-3" class="pb-2 web-screenshot">
+            <a class="img-link p-2 text-light" href="https://airbnb-clone-jlchinchilla.netlify.app/" target="_blank">Visit Website</a>
+          </div>
+          <a class="d-block text-white display-5 py-2 my-3" href="https://airbnb-clone-jlchinchilla.netlify.app/" target="_blank">Airbnb clone</a>
+          <div class="d-inline bg-light bg-opacity-40 pt-3 pb-2 px-2 rounded-2 border">
+            <i class="fa-brands fa-html5 fa-xl mx-1" style="color: #ff8040;"></i>
+            <i class="fa-brands fa-css3-alt fa-xl mx-1" style="color: #0080ff;"></i>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 px-3 py-4 text-center">
+          <div id="web-4" class="pb-2 web-screenshot">
+            <a class="img-link p-2 text-warning" href="https://airbnb-news-jlchinchilla.netlify.app/" target="_blank">Visit Website</a>
+          </div>
+          <a class="d-block text-white display-5 py-2 my-3" href="https://airbnb-news-jlchinchilla.netlify.app/" target="_blank">Airbnb News clone</a>
+          <div class="d-inline bg-light bg-opacity-40 pt-3 pb-2 px-2 rounded-2 border">
+            <i class="fa-brands fa-html5 fa-xl mx-1" style="color: #ff8040;"></i>
+            <i class="fa-brands fa-css3-alt fa-xl mx-1" style="color: #0080ff;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center text-white px-5 my-5 bg-dark bg-gradient bg-opacity-50 rounded">
+        <div class="col-12 text-center">
+          <h2 id="about" class="display-2 fw-bold mt-5">About</h2>
+        </div>
+        <div class="col-12 text-end">
+          <h3 class="mt-2 fst-italic">Versatile, adaptable and committed to quality</h3>
+        </div>
+        <div class="col-9 my-3">
+          <p class="lh-base font-monospace">With a profound passion for <span class="fs-5 fw-bold">Front-End development</span>, I place a strong <em>emphasis</em> on crafting an <span class="text-decoration-underline">Enchanting</span> and <span class="text-decoration-underline">Seamless</span> user experience. I am consistenly driven to <span class="d-inline-block animate__animated animate__pulse animate__infinite">expand my knowledge</span>, eagerly taking <span class="text-decoration-line-through">on</span> new projects <span class="text-decoration-line-through">and</span> forging new connections. I thoroughly enjoy meeting <span class="text-warning">new people</span> and <span class="text-warning">learning</span> while working on exciting projects.</p>
+        </div>
+        <div class ="col-3 align-items-end">
+          <a class="mx-2 logo-link" href="https://github.com/ChinchillaMusic" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #fff;"></i></a>
+          <a class="mx-2 logo-link" href="https://www.linkedin.com/in/joseluischinchillachacon/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl" style="color: #fff;"></i></a>
+          <a class="mx-2 logo-link" href="mailto:chinchillacoding@gmail.com" target="_blank"><i class="fa-solid fa-at fa-xl" style="color: #fff;"></i></a>
+        </div>
+        <hr>
+        <div class="col-12 col-sm-6 col-lg-3 p-3 my-1">
+          <i class="d-inline-block fa-solid fa-code-fork fa-xl me-3" style="color: #fff;"></i><span class="fw-bolder">GIT-trained</span>
+          <p class="block-text mt-3">Skilled in Git, proficient in version control, and capable of effectively managing code repositories</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-3 my-1">
+          <i class="d-inline-block fa-solid fa-sitemap fa-xl me-3" style="color: #ffffff;"></i><span class="fw-bolder">Scrum-organised</span>
+          <p class="block-text mt-3">Proficient in implementing Scrum methodologies, enabling collaborative and iterative progress within teams</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-3 my-1">
+          <i class="d-inline-block fa-solid fa-brush fa-xl me-3" style="color: #fff;"></i><span class="fw-bolder">Front-Design</span>
+          <p class="block-text mt-3">Crafting exceptional front-end designs, combining aesthetics and functionality for an great user experience</p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 p-3 my-1">
+          <i class="d-inline-block fa-solid fa-code fa-xl me-3" style="color: #fff;"></i><span class="fw-bolder">Coding skills</span>
+          <p class="block-text mt-3">Ability to write efficient and clean code, delivering high-quality solutions that exceed expectations</p>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid border-top bg-dark">
+      <div id="contact" class="text-white">
+        <h4 id="contact" class="pt-5 pb-3 mx-2 my-0 text-center">Contact</h4>
+        <p class="text-white pb-5 mx-2 my-0 text-center"><a class="logo-link footer-text" href="mailto:chinchillacoding@gmail.com" target="_blank">chinchillacoding@gmail.com</a> / <a class="logo-link footer-text" href="https://twitter.com/JLChinchillaMus" target="_blank">@JLChinchillaMus</a> on twitter / Part of <a class="logo-link footer-text" href="https://www.altcademy.com/" target="_blank">Altcademy's</a> Fullstack Program</p>
+      </div>
+      
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>    
+  </body>
+</html>

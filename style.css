@@ -1,0 +1,110 @@
+/* ----- General -----*/
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ----- Navbar -----*/
+@media (min-width: 992px) {
+  .interact-link:hover {
+    transform: scale(1.2);
+    margin-inline: .2em;
+  }
+}
+
+.interact-link img:hover {
+  animation: jello;
+  animation-duration: .5s;
+}
+
+.logo-link {
+  transition: filter 1s .1s;
+}
+
+.logo-link:hover {
+  filter: blur(1px);
+}
+
+/* ----- Home -----*/
+@media (max-width: 768px) {
+  .shorter-disappear {
+    display: none !important;
+  }
+}
+
+.home-page {
+  background-image: url(images/home-back.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.portrait {
+  transform: scale(.6);
+  filter: grayscale(69%);
+  transition: filter .5s ease-in-out
+}
+
+.portrait:hover {
+  filter: grayscale(0);
+} 
+
+/*----- Portfolio -----*/
+.portfolio-section {
+  background: linear-gradient(#0f2027, #203a43, #2c5364);
+}
+
+.web-screenshot {
+  padding-top: calc(1 / 2 * 100%);
+  background-size: cover;
+  background-position: center;
+  transition: filter .5s ease-in-out;
+  filter: grayscale(100%);
+  border: 3px solid wheat;
+  border-radius: 7px;
+}
+
+.img-link {
+  visibility: hidden;
+  display: inline-block;
+}
+
+.web-screenshot:hover .img-link {
+  visibility: visible;
+  animation: heartBeat;
+  animation-duration: 1s;
+}
+
+.img-link:hover {
+  padding: 10px;
+  background-color: #00b3ff76;
+  border-radius: 7px;
+}
+
+#web-1 {
+  background-image: url(images/web-1.jpg);
+}
+
+#web-2 {
+  background-image: url(images/web-2.jpg);
+}
+
+#web-3 {
+  background-image: url(images/web-3.jpg);
+}
+
+#web-4 {
+  background-image: url(images/web-4.jpg);
+}
+
+.web-screenshot:hover {
+  filter: grayscale(0);
+}
+
+/* ----- Footer ----- */
+.footer-text {
+  color: white;
+}
+
+.footer-text:hover {
+  color: bisque;
+}
